@@ -3,9 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AbueTech - Tecnología sin miedo. Apréndela paso a paso</title>
+    <meta name="description" content="Aprende tecnología de forma sencilla y sin complicaciones. Cursos y guías para adultos mayores.">
+    
+    <!-- Fuentes accesibles -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="inicio.js">
 </head>
 <body>
-    
+    <!-- Enlace de salto para lectores de pantalla -->
+    <a href="#main-content" class="skip-link">Ir al contenido principal</a>
+
+    <!-- Barra de accesibilidad -->
+    <div class="accessibility-bar">
+        <div class="accessibility-controls">
+            <span>Accesibilidad:</span>
+            <button class="accessibility-btn" onclick="toggleHighContrast()" id="contrast-btn" aria-label="Activar alto contraste">
+                🔆 Alto contraste
+            </button>
+            <button class="accessibility-btn" onclick="increaseTextSize()" aria-label="Aumentar tamaño de texto">
+                🔍+ Texto más grande
+            </button>
+            <button class="accessibility-btn" onclick="decreaseTextSize()" aria-label="Reducir tamaño de texto">
+                🔍- Texto más pequeño
+            </button>
+            <button class="accessibility-btn" onclick="speakText()" aria-label="Leer página en voz alta">
+                🔊 Escuchar
+            </button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav role="navigation" aria-label="Navegación principal">
+            <a href="#" class="logo" aria-label="AbueTech - Inicio">AbueTech</a>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="Abrir menú" aria-expanded="false">
+                ☰
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#guias">Guías paso a paso</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#familiares">Para familiares</a></li>
+                <li><a href="#comunidad">Comunidad</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="inicio">
+            <div class="fade-in">
+                <h1>Tecnología sin miedo.<br>Apréndela paso a paso.</h1>
+                <p>Te acompañamos en tu aventura tecnológica con paciencia, cariño y explicaciones claras que realmente entiendas.</p>
+                <a href="#guias" class="btn-primary">Empieza aquí</a>
+            </div>
+            
+            <div class="hero-image fade-in">
+                <div class="hero-illustration" role="img" aria-label="Ilustración de una persona mayor sonriendo mientras usa un dispositivo móvil">
+                    📱👴🏼
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="guias">
+            <h2>Lo que puedes aprender con nosotros</h2>
+            <div class="features-grid">
+                <article class="feature-card fade-in">
+                    <div class="feature-icon" role="img" aria-label="Icono de teléfono móvil">📱</div>
+                    <h3>Aprende a usar tu celular</h3>
+                    <p>Desde encenderlo hasta tomar fotos, enviar mensajes y descargar aplicaciones. Todo explicado con paciencia y sin prisa.</p>
+                </article>
+
+                <article class="feature-card fade-in">
+                    <div class="feature-icon" role="img" aria-label="Icono de videollamada">📹</div>
+                    <h3>Videollamadas con tus nietos</h3>
+                    <p>Conecta con tu familia desde cualquier lugar. Te enseñamos WhatsApp, Zoom, Skype y más de forma sencilla.</p>
+                </article>
+
+                <article class="feature-card fade-in">
+                    <div class="feature-icon" role="img" aria-label="Icono de seguridad">🛡️</div>
+                    <h3>Seguridad online sin complicaciones</h3>
+                    <p>Protégete de estafas y mantén segura tu información personal. Consejos prácticos y fáciles de recordar.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h2>¿Listo para comenzar tu aventura tecnológica?</h2>
+            <p>Miles de personas como tú ya han descubierto lo fácil que puede ser la tecnología cuando se explica bien.</p>
+            <a href="#cursos" class="btn-primary">Ver nuestros cursos</a>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <h2>Recibe nuestras guías gratis cada semana</h2>
+            <p>Tips, trucos y guías paso a paso directamente en tu correo electrónico</p>
+            <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                <input type="email" placeholder="Tu correo electrónico" required aria-label="Ingresa tu correo electrónico">
+                <button type="submit">Suscribirme</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Aprende con nosotros</h3>
+                <ul>
+                    <li><a href="#guias">Guías paso a paso</a></li>
+                    <li><a href="#cursos">Cursos online</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#comunidad">Comunidad</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Soporte</h3>
+                <ul>
+                    <li><a href="#familiares">Ayuda para familiares</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#faq">Preguntas frecuentes</a></li>
+                    <li><a href="#ayuda">Centro de ayuda</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <p>Más consejos y tutoriales en nuestras redes sociales</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Síguenos en Facebook">📘</a>
+                    <a href="#" class="social-icon" aria-label="Síguenos en YouTube">📺</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>AbueTech</h3>
+                <p>Tecnología accesible para todos. Aprender nunca fue tan fácil y cercano.</p>
+                <p><strong>📞 Teléfono:</strong> 1-800-ABUETECH</p>
+                <p><strong>✉️ Email:</strong> hola@abuetech.com</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 AbueTech.com - Tecnología con amor y paciencia • <a href="#privacidad" style="color: inherit;">Política de Privacidad</a> • <a href="#terminos" style="color: inherit;">Términos de Uso</a></p>
+        </div>
+    </footer>
 </body>
 </html>
