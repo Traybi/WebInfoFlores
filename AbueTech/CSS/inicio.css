@@ -139,11 +139,10 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--azul-claro), var(--verde-suave));
+    background-image: url('images/FondoInicioAbueTech.png');
     color: white;
+    background-size: cover;
     text-align: center;
-    padding: 80px 20px;
-    min-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
