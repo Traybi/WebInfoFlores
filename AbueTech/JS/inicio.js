@@ -101,6 +101,18 @@ function subscribeNewsletter(event) {
     event.target.reset();
 }
 
+// Envío del formulario de contacto
+function submitContact(event) {
+    event.preventDefault();
+    const form = event.target;
+    const name = form.querySelector('input[type="text"]').value;
+    const email = form.querySelector('input[type="email"]').value;
+    const message = form.querySelector('textarea').value;
+
+    alert(`Gracias, ${name}! Hemos recibido tu mensaje y te responderemos pronto al correo: ${email}`);
+    form.reset();
+}
+
 // Animaciones al hacer scroll
 function handleScrollAnimations() {
     const elements = document.querySelectorAll('.fade-in');

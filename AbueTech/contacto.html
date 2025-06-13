@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AbueTech - Tecnología sin miedo. Apréndela paso a paso</title>
-    <meta name="description" content="Aprende tecnología de forma sencilla y sin complicaciones. Cursos y guías para adultos mayores.">
+    <title>AbueTech - Contacto</title>
+    <meta name="description" content="Ponte en contacto con el equipo de AbueTech.">
     
     <!-- Fuentes accesibles -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -59,34 +59,25 @@
         <!-- Hero Section -->
         <section class="hero" id="inicio">
             <div class="fade-in">
-                <h1>Tecnología sin miedo.<br>Apréndela paso a paso.</h1>
-                <p>Te acompañamos en tu aventura tecnológica con paciencia, cariño y explicaciones claras que realmente entiendas.</p>
-                <a href="guias.html" class="btn-primary">Empieza aquí</a>
+                <h1>Contacto</h1>
+                <p>¿Tienes dudas? Envíanos tu mensaje y te responderemos lo antes posible.</p>
             </div>
         </section>
 
-        <!-- Features Section -->
-        <section class="features" id="guias">
-            <h2>Lo que puedes aprender con nosotros</h2>
-            <div class="features-grid">
-                <article class="feature-card fade-in">
-                    <img class="feature-icon" src="IMAGES/celular.svg" alt="Icono de teléfono móvil">
-                    <h3>Aprende a usar tu celular</h3>
-                    <p>Desde encenderlo hasta tomar fotos, enviar mensajes y descargar aplicaciones. Todo explicado con paciencia y sin prisa.</p>
-                </article>
-
-                <article class="feature-card fade-in">
-                    <img class="feature-icon" src="IMAGES/videollamada.svg" alt="Icono de videollamada">
-                    <h3>Videollamadas con tus nietos</h3>
-                    <p>Conecta con tu familia desde cualquier lugar. Te enseñamos WhatsApp, Zoom, Skype y más de forma sencilla.</p>
-                </article>
-
-                <article class="feature-card fade-in">
-                    <img class="feature-icon" src="IMAGES/seguridad.svg" alt="Icono de seguridad">
-                    <h3>Seguridad online sin complicaciones</h3>
-                    <p>Protégete de estafas y mantén segura tu información personal. Consejos prácticos y fáciles de recordar.</p>
-                </article>
-            </div>
+        <section class="features">
+            <h2>Envíanos un mensaje</h2>
+            <form class="contact-form" onsubmit="submitContact(event)">
+                <label>Nombre:
+                    <input type="text" required>
+                </label>
+                <label>Correo electrónico:
+                    <input type="email" required>
+                </label>
+                <label>Mensaje:
+                    <textarea rows="5" required></textarea>
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
 
         <!-- CTA Section -->
