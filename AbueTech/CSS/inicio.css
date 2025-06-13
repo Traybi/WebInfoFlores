@@ -139,7 +139,8 @@ nav {
 
 /* Hero Section */
 .hero {
-    background-image: url('images/FondoInicioAbueTech.png');
+    /* Path corrected to load background image properly */
+    background-image: url('../IMAGES/FondoInicioAbueTech.png');
     color: white;
     background-size: cover;
     text-align: center;
@@ -238,9 +239,13 @@ nav {
 }
 
 .feature-icon {
-    font-size: 60px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 20px;
-    color: var(--azul-claro);
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .feature-card h3 {
@@ -323,6 +328,43 @@ nav {
 .newsletter-form button:hover {
     background-color: #7AC697;
     transform: translateY(-2px);
+}
+
+/* Formulario de contacto */
+.contact-form {
+    display: grid;
+    gap: 15px;
+    max-width: 500px;
+    margin: 40px auto 0;
+}
+
+.contact-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: var(--verde-suave);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #7AC697;
 }
 
 /* Footer */
