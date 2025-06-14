@@ -211,7 +211,13 @@ if (menu.classList.contains('active')) {
 function processPayment(event) {
     event.preventDefault();
     const form = event.target;
+    const params = new URLSearchParams(window.location.search);
+    const course = params.get('course');
     const name = form.querySelector('input[name="name"]').value;
     alert(`\u00a1Gracias, ${name}! Tu pago se ha realizado correctamente.`);
-    form.reset();
+    if (course) {
+        window.location.href = course;
+    } else {
+        form.reset();
+    }
 }

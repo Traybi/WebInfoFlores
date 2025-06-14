@@ -139,17 +139,17 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #8ec5fc 0%, #3f87a6 100%);
-    color: white;
+    background-image: url("../IMAGES/FondoInicioAbueTech.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 60vh;
 }
 
 .hero h1 {
@@ -206,6 +206,39 @@ nav {
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
+/* Menú rápido de accesos directos */
+.quick-menu {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.quick-menu a {
+    background-color: var(--azul-claro);
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 6px 15px var(--sombra);
+    transition: background-color 0.3s;
+}
+
+.quick-menu a:hover {
+    background-color: var(--azul-oscuro);
+}
+
+.quick-menu img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
 /* Sección de características principales */
 .features {
     padding: 80px 20px;
@@ -260,6 +293,15 @@ nav {
     font-size: 1.1rem;
     color: var(--gris-texto);
     line-height: 1.6;
+}
+
+.gratis {
+    background-color: var(--verde-suave);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-left: 8px;
 }
 
 /* Sección CTA */

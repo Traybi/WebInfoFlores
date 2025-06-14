@@ -52,7 +52,7 @@
         <section class="hero" id="inicio">
             <div class="fade-in">
                 <h1>Finalizar compra</h1>
-                <p>Ingresa tus datos para completar el pago del curso seleccionado.</p>
+                <p id="course-selected">Ingresa tus datos para completar el pago.</p>
             </div>
         </section>
 
@@ -127,9 +127,19 @@
             </div>
         </div>
 
-        <div class="footer-bottom">
-            <p>&copy; 2025 AbueTech.com - Tecnología con amor y paciencia • <a href="#privacidad" style="color: inherit;">Política de Privacidad</a> • <a href="#terminos" style="color: inherit;">Términos de Uso</a></p>
-        </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 AbueTech.com - Tecnología con amor y paciencia • <a href="#privacidad" style="color: inherit;">Política de Privacidad</a> • <a href="#terminos" style="color: inherit;">Términos de Uso</a></p>
+    </div>
     </footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('name');
+        if (name) {
+            const p = document.getElementById('course-selected');
+            p.textContent = 'Estás comprando el curso: ' + name;
+        }
+    });
+    </script>
 </body>
 </html>
