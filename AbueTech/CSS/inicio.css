@@ -567,3 +567,35 @@ input:focus {
     outline: 3px solid var(--verde-suave);
     outline-offset: 2px;
 }
+
+/* Contenido de los cursos */
+.course-content {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.course-content h2 {
+    text-align: center;
+    color: var(--azul-oscuro);
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.lesson {
+    background: var(--blanco);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 25px var(--sombra);
+    margin-bottom: 40px;
+}
+
+.lesson h3 {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+
+.challenge {
+    margin-top: 15px;
+    font-weight: 600;
+}
