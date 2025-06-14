@@ -208,10 +208,25 @@ if (menu.classList.contains('active')) {
 });
 
 // Procesar pago simulado
+function getQueryParam(param) {
+    const params = new URLSearchParams(window.location.search);
+    return params.get(param);
+}
+
 function processPayment(event) {
     event.preventDefault();
     const form = event.target;
     const name = form.querySelector('input[name="name"]').value;
-    alert(`\u00a1Gracias, ${name}! Tu pago se ha realizado correctamente.`);
+    const course = getQueryParam('course') || 'basico';
+
+    const successDiv = document.getElementById('payment-success');
+    const messageP = document.getElementById('success-message');
+    const link = document.getElementById('course-link');
+
+    messageP.textContent = `¡Gracias, ${name}! Tu pago se ha realizado correctamente.`;
+    link.href = `curso_${course}.html`;
+
+    form.style.display = 'none';
+    successDiv.style.display = 'block';
     form.reset();
 }
