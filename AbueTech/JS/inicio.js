@@ -226,7 +226,63 @@ function processPayment(event) {
     messageP.textContent = `¡Gracias, ${name}! Tu pago se ha realizado correctamente.`;
     link.href = `curso_${course}.html`;
 
+    // Guardar el curso comprado
+    addPurchasedCourse(course);
+
     form.style.display = 'none';
     successDiv.style.display = 'block';
     form.reset();
 }
+
+// ----- Gestión de cursos comprados -----
+function getPurchasedCourses() {
+    const stored = localStorage.getItem('purchasedCourses');
+    try {
+        return stored ? JSON.parse(stored) : [];
+    } catch {
+        return [];
+    }
+}
+
+function addPurchasedCourse(course) {
+    const courses = getPurchasedCourses();
+    if (!courses.includes(course)) {
+        courses.push(course);
+        localStorage.setItem('purchasedCourses', JSON.stringify(courses));
+    }
+}
+
+function updateCourseButtons() {
+    const courses = getPurchasedCourses();
+    document.querySelectorAll('[data-course]').forEach(btn => {
+        const c = btn.getAttribute('data-course');
+        if (courses.includes(c)) {
+            btn.textContent = 'Ver curso';
+            btn.href = `curso_${c}.html`;
+        }
+    });
+}
+
+function displayPurchasedCourses() {
+    const list = document.getElementById('purchased-courses');
+    if (!list) return;
+    const courses = getPurchasedCourses();
+    if (courses.length === 0) {
+        list.innerHTML = '<p>Aún no has comprado ningún curso.</p>';
+        return;
+    }
+    const ul = document.createElement('ul');
+    courses.forEach(c => {
+        const li = document.createElement('li');
+        const link = document.createElement('a');
+        link.href = `curso_${c}.html`;
+        link.textContent = `Curso ${c}`;
+        li.appendChild(link);
+        ul.appendChild(li);
+    });
+    list.appendChild(ul);
+}
+
+document.addEventListener('DOMContentLoaded', displayPurchasedCourses);
+
+document.addEventListener('DOMContentLoaded', updateCourseButtons);
