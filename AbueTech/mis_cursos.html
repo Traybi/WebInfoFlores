@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbueTech - Mis Cursos</title>
+    <meta name="description" content="Listado de cursos que has comprado.">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/inicio.css">
+</head>
+<body>
+    <script src="JS/inicio.js"></script>
+    <a href="#main-content" class="skip-link">Ir al contenido principal</a>
+    <div class="accessibility-bar">
+        <div class="accessibility-controls">
+            <span>Accesibilidad:</span>
+            <button class="accessibility-btn" onclick="toggleHighContrast()" id="contrast-btn" aria-label="Activar alto contraste">🔆 Alto contraste</button>
+            <button class="accessibility-btn" onclick="increaseTextSize()" aria-label="Aumentar tamaño de texto">🔍+ Texto más grande</button>
+            <button class="accessibility-btn" onclick="decreaseTextSize()" aria-label="Reducir tamaño de texto">🔍- Texto más pequeño</button>
+            <button class="accessibility-btn" onclick="speakText()" aria-label="Leer página en voz alta">🔊 Escuchar</button>
+        </div>
+    </div>
+    <header>
+        <nav role="navigation" aria-label="Navegación principal">
+            <a href="inicio.html" class="logo" aria-label="AbueTech - Inicio">AbueTech</a>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="Abrir menú" aria-expanded="false">☰</button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="guias.html">Guías paso a paso</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="familiares.html">Para familiares</a></li>
+                <li><a href="comunidad.html">Comunidad</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section class="hero" id="inicio">
+            <div class="fade-in">
+                <h1>Mis Cursos</h1>
+                <p>Aquí encontrarás acceso directo a los cursos que hayas comprado.</p>
+            </div>
+        </section>
+        <section class="features">
+            <h2>Tus cursos disponibles</h2>
+            <div id="purchased-courses"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Aprende con nosotros</h3>
+                <ul>
+                    <li><a href="guias.html">Guías paso a paso</a></li>
+                    <li><a href="cursos.html">Cursos online</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="comunidad.html">Comunidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Soporte</h3>
+                <ul>
+                    <li><a href="familiares.html">Ayuda para familiares</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#faq">Preguntas frecuentes</a></li>
+                    <li><a href="#ayuda">Centro de ayuda</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <p>Más consejos y tutoriales en nuestras redes sociales</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Síguenos en Facebook">📘</a>
+                    <a href="#" class="social-icon" aria-label="Síguenos en YouTube">📺</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>AbueTech</h3>
+                <p>Tecnología accesible para todos. Aprender nunca fue tan fácil y cercano.</p>
+                <p><strong>📞 Teléfono:</strong>+34 000000000</p>
+                <p><strong>✉️ Email:</strong> info@abuetech.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 AbueTech.com - Tecnología con amor y paciencia • <a href="#privacidad" style="color: inherit;">Política de Privacidad</a> • <a href="#terminos" style="color: inherit;">Términos de Uso</a></p>
+        </div>
+    </footer>
+</body>
+</html>
