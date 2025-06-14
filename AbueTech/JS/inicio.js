@@ -206,3 +206,12 @@ if (menu.classList.contains('active')) {
 }
     }
 });
+
+// Procesar pago simulado
+function processPayment(event) {
+    event.preventDefault();
+    const form = event.target;
+    const name = form.querySelector('input[name="name"]').value;
+    alert(`\u00a1Gracias, ${name}! Tu pago se ha realizado correctamente.`);
+    form.reset();
+}
