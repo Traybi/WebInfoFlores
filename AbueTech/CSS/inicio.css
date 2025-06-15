@@ -52,11 +52,16 @@ body.extra-large-text {
     z-index: 1000;
 }
 
+.accessibility-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
 .accessibility-controls {
     display: inline-flex;
     gap: 15px;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 
