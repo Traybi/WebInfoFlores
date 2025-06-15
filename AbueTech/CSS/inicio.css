@@ -84,6 +84,7 @@ header {
     position: sticky;
     top: 50px;
     z-index: 999;
+    padding: 10px 0;
 }
 
 nav {
@@ -127,6 +128,12 @@ nav {
     transform: translateY(-2px);
 }
 
+/* Resalta la página actual */
+.nav-menu a[aria-current="page"] {
+    background-color: var(--azul-claro);
+    color: white;
+}
+
 /* Botón hamburguesa para móvil */
 .hamburger {
     display: none;
@@ -139,9 +146,9 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, rgba(255,214,161,0.85) 0%, rgba(255,122,89,0.85) 100%),
+    background: linear-gradient(135deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.85) 100%),
                 url('../IMAGES/FondoInicioAbueTech.png');
-    color: white;
+    color: var(--gris-texto);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
