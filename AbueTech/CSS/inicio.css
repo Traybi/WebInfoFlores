@@ -139,7 +139,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, rgba(142,197,252,0.8) 0%, rgba(63,135,166,0.8) 100%),
+    background: linear-gradient(135deg, rgba(255,214,161,0.85) 0%, rgba(255,122,89,0.85) 100%),
                 url('../IMAGES/FondoInicioAbueTech.png');
     color: white;
     background-size: cover;
@@ -604,9 +604,6 @@ input:focus {
     margin-top: 15px;
     font-weight: 600;
 }
-<<<<<<< ours
-=======
-
 .lesson ul {
     margin-top: 10px;
     margin-left: 20px;
@@ -616,4 +613,24 @@ input:focus {
 .lesson li {
     margin-bottom: 8px;
 }
->>>>>>> theirs
+
+/* Breve introducción en cada curso */
+.course-intro {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--gris-texto);
+    text-align: center;
+}
+
+.intro-seniors {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--gris-texto);
+}

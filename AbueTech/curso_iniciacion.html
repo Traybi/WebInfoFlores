@@ -3,20 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AbueTech - Blog</title>
-    <meta name="description" content="Noticias y artículos sobre tecnología para adultos mayores.">
-    
-    <!-- Fuentes accesibles -->
+    <title>AbueTech - Curso Introducción a la Tecnología</title>
+    <meta name="description" content="Comprende los conceptos básicos de la tecnología y conoce tus dispositivos.">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/inicio.css">
 </head>
 <body>
-    <!--JavaScript-->
     <script src="JS/inicio.js"></script>
-    <!-- Enlace de salto para lectores de pantalla -->
     <a href="#main-content" class="skip-link">Ir al contenido principal</a>
 
-    <!-- Barra de accesibilidad -->
     <div class="accessibility-bar">
         <div class="accessibility-controls">
             <span>Accesibilidad:</span>
@@ -35,7 +30,6 @@
         </div>
     </div>
 
-    <!-- Header -->
     <header>
         <nav role="navigation" aria-label="Navegación principal">
             <a href="inicio.html" class="logo" aria-label="AbueTech - Inicio">AbueTech</a>
@@ -56,44 +50,69 @@
         </nav>
     </header>
 
-    <!-- Contenido principal -->
     <main id="main-content">
-        <!-- Hero Section -->
         <section class="hero" id="inicio">
             <div class="fade-in">
-                <h1>Blog AbueTech</h1>
-                <p>Noticias, novedades y artículos para seguir aprendiendo.</p>
+                <h1>Curso Introducción a la Tecnología</h1>
+                <p>Descubre qué es un ordenador, un teléfono móvil y cómo conectarte a Internet.</p>
             </div>
         </section>
+    <p class="course-intro">Aprenderás los fundamentos de la tecnología y cómo empezar a utilizar tus dispositivos con confianza.</p>
 
         <section class="features">
-            <h2>Últimas entradas</h2>
+            <h2>Lo que aprenderás</h2>
             <div class="features-grid">
                 <article class="feature-card fade-in">
-                    <h3>Cómo elegir tu primer smartphone</h3>
-                    <p>Consejos básicos para dar el salto al mundo móvil sin complicaciones.</p>
-                </article>
-
+                    <img class="feature-icon" src="IMAGES/celular.svg" alt="Imagen de un móvil">
+                    <h3>Conoce tu móvil y ordenador</h3>
+                    <p>Identifica las partes de cada dispositivo y para qué sirve cada botón.</p>
                 <article class="feature-card fade-in">
-                    <h3>Aplicaciones útiles para el día a día</h3>
-                    <p>Una selección de herramientas que te harán la vida más fácil.</p>
-                </article>
-
-                <article class="feature-card fade-in">
-                    <h3>Mantén tu privacidad en redes sociales</h3>
-                    <p>Buenas prácticas para compartir de forma segura.</p>
-                </article>
+                    <img class="feature-icon" src="IMAGES/videollamada.svg" alt="Icono de videollamada">
+                    <h3>Moverte por las pantallas</h3>
+                    <p>Aprende a desplazarte, usar el teclado y ajustar el volumen.</p>
+                    <img class="feature-icon" src="IMAGES/seguridad.svg" alt="Icono de aplicaciones">
+                    <h3>Primeros pasos en Internet</h3>
+                    <p>Cómo usar el navegador para buscar y abrir páginas seguras.</p>
+        <section class="course-content">
+            <h2>Lecciones del curso</h2>
+            <p><a href="PDF/guia_iniciacion.pdf" download>Descargar guía en PDF</a></p>
+            <div class="lesson fade-in">
+                <h3>1. Encender tu dispositivo</h3>
+                <p>Veremos cómo iniciar tu móvil u ordenador y ajustar configuraciones básicas.</p>
+                <ul>
+                    <li>Pulsa el botón de encendido durante unos segundos.</li>
+                    <li>Configura el idioma y la hora siguiendo la pantalla.</li>
+                </ul>
+                <p class="challenge"><strong>Reto:</strong> Enciende tu dispositivo y revisa que la hora sea correcta.</p>
             </div>
+            <div class="lesson fade-in">
+                <h3>2. Personaliza el tamaño de letra</h3>
+                <p>Aprenderás a hacer que todo se vea más grande y claro.</p>
+                <ul>
+                    <li>Abre los ajustes de accesibilidad.</li>
+                    <li>Aumenta el tamaño de texto y el volumen de sonido.</li>
+                </ul>
+                <p class="challenge"><strong>Reto:</strong> Ajusta el texto a un tamaño que te resulte cómodo.</p>
+            </div>
+            <div class="lesson fade-in">
+                <h3>3. Tu primera búsqueda en Internet</h3>
+                <p>Te guiamos para abrir el navegador y encontrar información.</p>
+                <ul>
+                    <li>Abre la aplicación del navegador.</li>
+                    <li>Escribe algo que te interese en la barra de búsqueda.</li>
+                    <li>Abre uno de los resultados con confianza.</li>
+                </ul>
+                <p class="challenge"><strong>Reto:</strong> Busca en Internet la previsión del tiempo para tu ciudad.</p>
+            </div>
+
         </section>
 
-        <!-- CTA Section -->
         <section class="cta-section">
-            <h2>¿Listo para comenzar tu aventura tecnológica?</h2>
-            <p>Miles de personas como tú ya han descubierto lo fácil que puede ser la tecnología cuando se explica bien.</p>
-            <a href="cursos.html" class="btn-primary">Ver nuestros cursos</a>
+            <h2>¿Listo para comprar este curso?</h2>
+            <p>Accede a todas las lecciones y aprende a tu ritmo.</p>
+            <a href="pago.html?course=iniciacion" class="btn-primary">Comprar curso</a>
         </section>
 
-        <!-- Newsletter Section -->
         <section class="newsletter">
             <h2>Recibe nuestras guías gratis cada semana</h2>
             <p>Tips, trucos y guías paso a paso directamente en tu correo electrónico</p>
@@ -104,7 +123,6 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
@@ -116,7 +134,7 @@
                     <li><a href="comunidad.html">Comunidad</a></li>
                 </ul>
             </div>
-            
+
             <div class="footer-section">
                 <h3>Soporte</h3>
                 <ul>
@@ -125,7 +143,7 @@
                     <li><a href="ayuda.html">Centro de ayuda</a></li>
                 </ul>
             </div>
-            
+
             <div class="footer-section">
                 <h3>Síguenos</h3>
                 <p>Más consejos y tutoriales en nuestras redes sociales</p>
@@ -134,7 +152,7 @@
                     <a href="#" class="social-icon" aria-label="Síguenos en YouTube">📺</a>
                 </div>
             </div>
-            
+
             <div class="footer-section">
                 <h3>AbueTech</h3>
                 <p>Tecnología accesible para todos. Aprender nunca fue tan fácil y cercano.</p>
@@ -142,7 +160,7 @@
                 <p><strong>✉️ Email:</strong> info@abuetech.com</p>
             </div>
         </div>
-        
+
         <div class="footer-bottom">
             <p>&copy; 2025 AbueTech.com - Tecnología con amor y paciencia • <a href="#privacidad" style="color: inherit;">Política de Privacidad</a> • <a href="#terminos" style="color: inherit;">Términos de Uso</a></p>
         </div>
