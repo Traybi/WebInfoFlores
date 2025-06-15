@@ -19,7 +19,7 @@ body {
     font-size: 18px;
     line-height: 1.6;
     color: var(--gris-texto);
-    background-color: var(--beige);
+    background: linear-gradient(to bottom, #fff8ee, var(--beige));
 }
 
 /* Modo alto contraste */
@@ -139,7 +139,8 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #8ec5fc 0%, #3f87a6 100%);
+    background: linear-gradient(135deg, rgba(142,197,252,0.8) 0%, rgba(63,135,166,0.8) 100%),
+                url('../IMAGES/FondoInicioAbueTech.png');
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
@@ -238,6 +239,10 @@ nav {
 .feature-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.faq .feature-card p {
+    font-size: 1rem;
 }
 
 .feature-icon {
@@ -599,3 +604,16 @@ input:focus {
     margin-top: 15px;
     font-weight: 600;
 }
+<<<<<<< ours
+=======
+
+.lesson ul {
+    margin-top: 10px;
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.lesson li {
+    margin-bottom: 8px;
+}
+>>>>>>> theirs

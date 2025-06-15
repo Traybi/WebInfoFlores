@@ -67,11 +67,11 @@ return;
     }
 
     const textToRead = `
-Bienvenido a AbueTech punto com. 
+Bienvenido a AbueTech punto com.
 Tecnología sin miedo. Apréndela paso a paso.
 Te acompañamos en tu aventura tecnológica con paciencia, cariño y explicaciones claras que realmente entiendas.
 
-Puedes aprender a usar tu celular, hacer videollamadas con tus nietos, y mantener tu seguridad online sin complicaciones.
+Puedes aprender a usar tu celular, navegar por internet, hacer videollamadas con tus nietos y mantener tu seguridad online sin complicaciones.
 
 Para más información, explora nuestras guías paso a paso y cursos.
     `;
